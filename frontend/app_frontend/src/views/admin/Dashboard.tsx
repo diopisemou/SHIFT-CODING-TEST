@@ -24,7 +24,7 @@ const Dashboard = () => {
                 { data.map((v:any) => {
                     return (
                         <Grid item xs>
-                            <DashboardCard title="Quizz Manager" > {v.quizz_name} </DashboardCard> 
+                            <DashboardCard title="Quizz Name" > {v.quizz_name} </DashboardCard> 
                         </Grid>
                         );
                     })

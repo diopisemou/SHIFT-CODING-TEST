@@ -9,7 +9,8 @@ import {
 import { Link } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import sidelogo from '../logo.svg';
-import DashboardIcon from '@material-ui/icons/Dashboard';
+
+import { Dashboard, VerifiedUser, Queue, QuestionAnswer } from '@material-ui/icons';
 import ExitIcon from '@material-ui/icons/ExitToApp';
 
 import  languageJson  from "../config/language";
@@ -35,25 +36,25 @@ function AppMenuAdmin() {
         <MenuList>
           <MenuItem component={Link} to="/dashboard">
             <ListItemIcon>
-              <DashboardIcon />
+              <Dashboard />
             </ListItemIcon>
             <Typography variant="inherit">{languageJson.dashboard_text}</Typography>
           </MenuItem>
           <MenuItem component={Link} to="/quizzs">
             <ListItemIcon>
-              <DashboardIcon />
+              <Queue />
             </ListItemIcon>
             <Typography variant="inherit">{languageJson.quizzs_text}</Typography>
           </MenuItem>
           <MenuItem component={Link} to="/questions">
             <ListItemIcon>
-              <DashboardIcon />
+              <QuestionAnswer />
             </ListItemIcon>
             <Typography variant="inherit">{languageJson.questions_text}</Typography>
           </MenuItem>
           <MenuItem component={Link} to="/users">
             <ListItemIcon>
-              <DashboardIcon />
+              <VerifiedUser />
             </ListItemIcon>
             <Typography variant="inherit">{languageJson.users_text}</Typography>
           </MenuItem>
