@@ -57,7 +57,7 @@ fi
 
     cd -
 
-    cd ../frontend/perspective_app
+    cd ../frontend/app_frontend
 
 
     echo "  Installing packages in React App..."

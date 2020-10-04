@@ -10,5 +10,5 @@ pm2 delete app_backend
 
 # Stops and kills react app
 
-pm2 stop perspective_app
-pm2 delete perspective_app
+pm2 stop app_frontend
+pm2 delete app_frontend

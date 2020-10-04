@@ -45,5 +45,5 @@ fi
 
     cd -
 
-    cd ../frontend/perspective_app
-    pm2 start "$packageManager start" --name "perspective_app"
+    cd ../frontend/app_frontend
+    pm2 start "$packageManager start" --name "app_frontend"
