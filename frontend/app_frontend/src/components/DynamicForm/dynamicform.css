@@ -1,0 +1,95 @@
+.dynamic-form {
+    box-shadow: 2px 6px 8px grey;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px 2px;
+    width: 100%;
+    /* max-width: 600px; */
+}
+.dynamic-form .form-group {
+    padding: .5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dynamic-form .form-label {
+    text-align: left;
+    color: #2E86C1;
+}
+.dynamic-form .form-input{
+    margin-top: 5px;
+    line-height: 1.5em;
+}
+
+.dynamic-form select{
+    margin-top: 5px;
+    line-height: 1.5em;
+}
+
+.dynamic-form .form-group button{
+    padding: .5em;
+}
+
+.dynamic-form .form-group-radio {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.dynamic-form .form-group-checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.form-title {
+    text-align: left;
+    font-size: small;
+}
+.form-subtitle {
+    text-align: left;
+    font-weight: normal;
+    font-size: smaller;
+}
+
+.form-actions {
+    display: flex;
+}
+.form-actions button {
+    width: 80%;
+    line-height: 1.5em;
+    background-color: #3498DB;
+    color: white;
+    border-radius: 4px;
+    border:0;
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-bottom:5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.form-behaviour-red {
+    text-align: left;
+    font-size: medium;
+    color: #a81c1c;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 15px;
+}
+
+.form-behaviour-green {
+    text-align: left;
+    font-size: medium;
+    color: #1ac03e;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 15px;
+}
