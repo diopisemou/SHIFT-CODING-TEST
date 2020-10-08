@@ -138,8 +138,3 @@ Create a repository using your personal GitHub account and send us the link. Tha
 
 
 Happy Hacking!
-
-export PATH="~/.composer/vendor/bin"
-export PATH="$HOME/~/.composer/vendor/bin"
-
-export PATH="$HOME/Applications/Ampps/php"

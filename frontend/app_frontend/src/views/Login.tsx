@@ -4,7 +4,6 @@ import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import logobg from '../logo.svg';
 import { useSelector, useDispatch } from "react-redux";
@@ -15,35 +14,14 @@ import {
   clearLoginError
 }  from "../actions/authactions";
 import { fetchQuestions } from '../actions/questionactions';
+import { useStyles } from '../config/helper';
 
 
-const useStyles = makeStyles(theme => ({
-  '@global': {
-    body: {
-      backgroundColor: theme.palette.common.white,
-    },
-  },
-  paper: {
-    marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  avatar: {
-    margin: theme.spacing(2),
-    backgroundColor: theme.palette.secondary.main,
-    width:195,
-    height:195
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-}));
 
+/**
+ * Login component redirecting to dashboard
+ * @param props 
+ */
 const Login = (props: any) => {
   const auth = useSelector((state: any) => state.auth);
   const dispatch = useDispatch();

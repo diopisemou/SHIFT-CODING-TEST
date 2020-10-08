@@ -8,30 +8,10 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import "./dynamicform.css";
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(theme => ({
-    '@global': {
-      body: {
-        backgroundColor: theme.palette.common.white,
-      },
-    },
-    paper: {
-      marginTop: theme.spacing(8),
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-    },
-    form: {
-      width: '100%', // Fix IE 11 issue.
-      marginTop: theme.spacing(1),
-    },
-    submit: {
-      margin: theme.spacing(3, 0, 2),
-    },
-  }));
 
-export default class DynamicForm extends React.Component {
-  state = {};
-  constructor(props) {
+export default class DynamicForm extends React.Component<any> {
+  state:any = {};
+  constructor(props: any) {
     super(props);
   }
 
@@ -83,7 +63,8 @@ export default class DynamicForm extends React.Component {
   onSubmit = e => {
     e.preventDefault();
     let errors = this.validate();
-    if (Object.entries(errors).length !== 0) {
+    let objlen = Object.entries(errors).length;
+    if ( objlen !== 0) {
       alert(JSON.stringify(errors));
       return false;
     }
@@ -255,7 +236,7 @@ export default class DynamicForm extends React.Component {
         
         <Container component="main" maxWidth="md">
             <CssBaseline />
-            <div className={{
+            <div style={{
                     marginTop: (8),
                     display: 'flex',
                     flexDirection: 'column',
@@ -264,7 +245,8 @@ export default class DynamicForm extends React.Component {
                 <div className={this.props.className}>
                     <h4 className="form-title">{title}</h4>
                     <h5 className="form-subtitle">{subTitle}</h5>
-                    <form className={{ width: '100%', marginTop: (1)}, "dynamic-form"}
+                    <form className="dynamic-form"
+                    style={{width: '100%', marginTop: (1)}}
                     onSubmit={e => { this.onSubmit(e); }} >
                     {this.renderForm()}
                         <div className="form-actions">

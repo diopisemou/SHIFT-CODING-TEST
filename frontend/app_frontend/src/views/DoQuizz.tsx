@@ -44,6 +44,10 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+/**
+ * Component for handling quizz answering and saving
+ * @param props 
+ */
 const DoQuizz = (props: { history: string[]; }) => {
   let { quizz_id } = useParams<any>();
   const auth = useSelector((state: any) => state.auth);
@@ -79,7 +83,6 @@ const DoQuizz = (props: { history: string[]; }) => {
 
   useEffect(() => {
     if (quizzdata.quizz && quizzdata.quizz.questions) {
-      //setData(homedata.questions);
       setData({ ...data, qdata: quizzdata.quizz.questions.map((o: any, index:any) => {
           return {
             key: "question"+o.id,

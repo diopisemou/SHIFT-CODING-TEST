@@ -23,6 +23,10 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+/**
+ * Home component 
+ * @param props 
+ */
 const Home = (props: { history: string[]; }) => {
 
   const classes  = useStyles();
